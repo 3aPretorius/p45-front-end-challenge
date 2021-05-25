@@ -34,5 +34,12 @@
     .input-group {
       margin-left: 5rem;
     }
+
+    input[type="radio"][name="gender"][value="male"] {
+      appearance: none;
+      background: url('/components/user-profile-page/images/mars-symbol.svg') no-repeat center center;
+      height: 3.2rem;
+      width: 3.2rem;
+    }
   }
 }
