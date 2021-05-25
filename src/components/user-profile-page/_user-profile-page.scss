@@ -29,9 +29,11 @@
     background: #383D3F;
     border-radius: 50%;
   }
-
+ 
   &__form {
-    
+    .input-group {
+      margin-left: 5rem;
+    }
   }
 }
 
