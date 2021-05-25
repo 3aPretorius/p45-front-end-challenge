@@ -2,7 +2,11 @@
 
 ## Getting Started
 
+### Installation
+
 1. Clone this repo
 2. Run: `npm install`
-3. Run: `npm run dev`
 
+### Running the app
+
+1. Run: `npm run dev`
