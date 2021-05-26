@@ -181,4 +181,17 @@
       }
     }
   }
+
+  &__footer {
+    background: #FF9200;
+
+    .footer-title{
+      font-size: 4rem;
+    }
+
+    .footer-description{
+      font-size: 2rem;
+    }
+    
+  }
 }
