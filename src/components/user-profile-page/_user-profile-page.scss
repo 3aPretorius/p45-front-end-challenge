@@ -70,22 +70,85 @@
       display: inline-flex;
       margin-right: 2.4rem;
 
+      :focus, :hover {
+        border: 1px solid #B1BFCD;   
+      }
+
+      span {
+        &:hover{
+          border: none;
+        }  
+      }
+
       input[type="radio"] {
         appearance: none;
-        background: #F5F8F9;
+        // background: #F5F8F9;
         border-radius: 50%;
-        margin-right: 0.8rem;
+        cursor: pointer;
         height: 5.2rem;
-        width: 5.2rem;
+        margin-right: 0.8rem;
+        width: 5.2rem;   
+
+        // &:checked {
+        //   background: #B1BFCD
+        // }
       }
     }
 
     input[type="radio"][name="gender"][value="male"] {
-      appearance: none;
-      background: url("/components/user-profile-page/images/mars-symbol.svg")
+      background: #F5F8F9
+      url("/components/user-profile-page/images/mars-symbol.svg")
         no-repeat center center;
-      height: 3.2rem;
-      width: 3.2rem;
+
+        &:checked{
+          background: #B1BFCD
+      url("/components/user-profile-page/images/mars-symbol--white.svg")
+        no-repeat center center;
+        }
+    }
+
+    input[type="radio"][name="gender"][value="female"] {
+      background: #F5F8F9 url("/components/user-profile-page/images/venus-symbol.svg")
+        no-repeat center center;
+
+        &:checked{
+          background: #B1BFCD
+      url("/components/user-profile-page/images/venus-symbol--white.svg")
+        no-repeat center center;
+        }
+    }
+
+    input[type="radio"][name="membership"][value="classic"] {
+      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+        no-repeat center center;
+
+        &:checked{
+          background: #B1BFCD
+      url("/components/user-profile-page/images/card--white.svg")
+        no-repeat center center;
+        }
+    }
+
+    input[type="radio"][name="membership"][value="silver"] {
+      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+        no-repeat center center;
+
+        &:checked{
+          background: #B1BFCD
+      url("/components/user-profile-page/images/card--white.svg")
+        no-repeat center center;
+        }
+    }
+
+    input[type="radio"][name="membership"][value="gold"] {
+      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+        no-repeat center center;
+
+        &:checked{
+          background: #B1BFCD
+      url("/components/user-profile-page/images/card--white.svg")
+        no-repeat center center;
+        }
     }
   }
 }
