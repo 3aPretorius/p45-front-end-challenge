@@ -1,5 +1,7 @@
-import UserProfileForm from './components/user-profile-page/user-profile-page';
+import UserProfilePage from './components/user-profile-page/user-profile-page';
 
 document.addEventListener('DOMContentLoaded', function () {
-  UserProfileForm.init();
+  UserProfilePage.init();
 });
+
+

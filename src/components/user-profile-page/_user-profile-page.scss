@@ -167,7 +167,8 @@
         background-color: #F5F8F9;
 
         &:hover {
-          background-color: #CBD7DD;          
+          background-color: #CBD7DD;
+          transition: 250ms;          
         }
       }
 
@@ -175,8 +176,9 @@
         background-color: #60E6C5;
 
         &:hover {
-          background-color: #59C9A7
-          ;          
+          background-color: #59C9A7;
+          transition: 250ms;
+                   
         }
       }
     }
@@ -185,6 +187,7 @@
   &__footer {
     background: #FF9200;
     padding: 5rem 2rem 8rem;
+    position: relative;
    
 
     .footer-title{
@@ -204,4 +207,25 @@
     }
     
   }
+
+  &__form-container {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+body.should-show-footer .user-profile-page__footer {
+  bottom: 0;
+}
+
+body.should-show-footer .user-profile-page__header__arrow-button {
+  transform: rotate(270deg);
+}
+
+
+body.has-js .user-profile-page__header__arrow-button {
+  display: block;
+}
+body.has-js .user-profile-page__footer {
+  position: absolute;
 }
