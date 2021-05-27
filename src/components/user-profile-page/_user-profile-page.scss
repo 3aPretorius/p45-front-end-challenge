@@ -91,6 +91,8 @@
 
         &:checked {
           background: #b1bfcd;
+          background-position: center center;
+          background-repeat: no-repeat;
         }
       }
     }
@@ -103,49 +105,21 @@
       }
     }
 
-    // input[type="radio"][name="gender"][value="female"] {
-    //   background: #F5F8F9 url("/components/user-profile-page/images/venus-symbol.svg")
-    //     no-repeat center center;
+    input[type="radio"][name="gender"][value="female"] {
+      background-image: url("/components/user-profile-page/images/venus-symbol.svg");
 
-    //   //   &:checked{
-    //   //     background: #B1BFCD
-    //   // url("/components/user-profile-page/images/venus-symbol--white.svg")
-    //   //   no-repeat center center;
-    //   //   }
-    // }
+      &:checked {
+        background-image: url("/components/user-profile-page/images/venus-symbol--white.svg");
+      }
+    }
 
-    // input[type="radio"][name="membership"][value="classic"] {
-    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-    //     no-repeat center center;
+    input[type="radio"][name="membership"] {
+      background-image: url("/components/user-profile-page/images/card.svg");
 
-    //   //   &:checked{
-    //   //     background: #B1BFCD
-    //   // url("/components/user-profile-page/images/card--white.svg")
-    //   //   no-repeat center center;
-    //   //   }
-    // }
-
-    // input[type="radio"][name="membership"][value="silver"] {
-    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-    //     no-repeat center center;
-
-    //   //   &:checked{
-    //   //     background: #B1BFCD
-    //   // url("/components/user-profile-page/images/card--white.svg")
-    //   //   no-repeat center center;
-    //   //   }
-    // }
-
-    // input[type="radio"][name="membership"][value="gold"] {
-    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-    //     no-repeat center center;
-
-    //     &:checked{
-    //       background: #B1BFCD
-    //   url("/components/user-profile-page/images/card--white.svg")
-    //     no-repeat center center;
-    //     }
-    // }
+      &:checked {
+        background-image: url("/components/user-profile-page/images/card--white.svg");
+      }
+    }
 
     &__buttons {
       margin-top: 2rem;
