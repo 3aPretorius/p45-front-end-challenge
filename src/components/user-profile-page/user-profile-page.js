@@ -9,7 +9,7 @@ export default {
 function initialise() {
   document.body.classList.add('has-js');
   var arrowButton = document.querySelector('.user-profile-page__header__arrow-button');
-  arrowButton.addEventListener('click', onoFoterToggleButtonClick);
+  arrowButton.addEventListener('click', onFooterToggleButtonClick);
 }
 
 function onFooterToggleButtonClick() {

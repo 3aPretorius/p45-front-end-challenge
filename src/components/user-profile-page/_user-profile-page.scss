@@ -4,7 +4,7 @@
   position: relative;
 
   &__header {
-    background: #FFD500;
+    background: #ffd500;
     padding: 10rem 0;
 
     img {
@@ -28,8 +28,7 @@
   }
 
   &__header__arrow-button {
-    background: #383D3F url("/components/user-profile-page/images/arrow.svg")
-    no-repeat center center;
+    background: #383d3f url("/components/user-profile-page/images/arrow.svg") no-repeat center center;
     border-radius: 50%;
     cursor: pointer;
     height: 60px;
@@ -56,7 +55,7 @@
     }
 
     input {
-      background-color: #F5F8F9;
+      background-color: #f5f8f9;
       border-radius: 0.5rem;
       border: none;
       margin-top: 1rem;
@@ -69,89 +68,86 @@
       display: inline-flex;
       margin-right: 2.4rem;
 
-      :focus, :hover {
-        border: 1px solid #B1BFCD;   
+      :focus,
+      :hover {
+        border: 1px solid #b1bfcd;
       }
 
       span {
-        &:hover{
+        &:hover {
           border: none;
-        }  
+        }
       }
 
       input[type="radio"] {
         appearance: none;
-        // background: #F5F8F9;
+        background-position: center center;
+        background-repeat: no-repeat;
         border-radius: 50%;
         cursor: pointer;
         height: 5.2rem;
         margin-right: 0.8rem;
-        width: 5.2rem;   
+        width: 5.2rem;
 
-        // &:checked {
-        //   background: #B1BFCD
-        // }
+        &:checked {
+          background: #b1bfcd;
+        }
       }
     }
 
     input[type="radio"][name="gender"][value="male"] {
-      background: #F5F8F9
-      url("/components/user-profile-page/images/mars-symbol.svg")
-        no-repeat center center;
+      background-image: url("/components/user-profile-page/images/mars-symbol.svg");
 
-        &:checked{
-          background: #B1BFCD
-      url("/components/user-profile-page/images/mars-symbol--white.svg")
-        no-repeat center center;
-        }
+      &:checked {
+        background-image: url("/components/user-profile-page/images/mars-symbol--white.svg");
+      }
     }
 
-    input[type="radio"][name="gender"][value="female"] {
-      background: #F5F8F9 url("/components/user-profile-page/images/venus-symbol.svg")
-        no-repeat center center;
+    // input[type="radio"][name="gender"][value="female"] {
+    //   background: #F5F8F9 url("/components/user-profile-page/images/venus-symbol.svg")
+    //     no-repeat center center;
 
-        &:checked{
-          background: #B1BFCD
-      url("/components/user-profile-page/images/venus-symbol--white.svg")
-        no-repeat center center;
-        }
-    }
+    //   //   &:checked{
+    //   //     background: #B1BFCD
+    //   // url("/components/user-profile-page/images/venus-symbol--white.svg")
+    //   //   no-repeat center center;
+    //   //   }
+    // }
 
-    input[type="radio"][name="membership"][value="classic"] {
-      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-        no-repeat center center;
+    // input[type="radio"][name="membership"][value="classic"] {
+    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+    //     no-repeat center center;
 
-        &:checked{
-          background: #B1BFCD
-      url("/components/user-profile-page/images/card--white.svg")
-        no-repeat center center;
-        }
-    }
+    //   //   &:checked{
+    //   //     background: #B1BFCD
+    //   // url("/components/user-profile-page/images/card--white.svg")
+    //   //   no-repeat center center;
+    //   //   }
+    // }
 
-    input[type="radio"][name="membership"][value="silver"] {
-      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-        no-repeat center center;
+    // input[type="radio"][name="membership"][value="silver"] {
+    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+    //     no-repeat center center;
 
-        &:checked{
-          background: #B1BFCD
-      url("/components/user-profile-page/images/card--white.svg")
-        no-repeat center center;
-        }
-    }
+    //   //   &:checked{
+    //   //     background: #B1BFCD
+    //   // url("/components/user-profile-page/images/card--white.svg")
+    //   //   no-repeat center center;
+    //   //   }
+    // }
 
-    input[type="radio"][name="membership"][value="gold"] {
-      background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
-        no-repeat center center;
+    // input[type="radio"][name="membership"][value="gold"] {
+    //   background: #F5F8F9 url("/components/user-profile-page/images/card.svg")
+    //     no-repeat center center;
 
-        &:checked{
-          background: #B1BFCD
-      url("/components/user-profile-page/images/card--white.svg")
-        no-repeat center center;
-        }
-    }
+    //     &:checked{
+    //       background: #B1BFCD
+    //   url("/components/user-profile-page/images/card--white.svg")
+    //     no-repeat center center;
+    //     }
+    // }
 
     &__buttons {
-      
       margin-top: 2rem;
 
       button {
@@ -160,52 +156,47 @@
         margin-bottom: 2rem;
         padding: 2rem;
         text-transform: uppercase;
-        width:100%;
+        width: 100%;
       }
 
-      &-cancel{
-        background-color: #F5F8F9;
+      &-cancel {
+        background-color: #f5f8f9;
 
         &:hover {
-          background-color: #CBD7DD;
-          transition: 250ms;          
+          background-color: #cbd7dd;
+          transition: 250ms;
         }
       }
 
-      &-save{
-        background-color: #60E6C5;
+      &-save {
+        background-color: #60e6c5;
 
         &:hover {
-          background-color: #59C9A7;
+          background-color: #59c9a7;
           transition: 250ms;
-                   
         }
       }
     }
   }
 
   &__footer {
-    background: #FF9200;
+    background: #ff9200;
     padding: 5rem 2rem 8rem;
     position: relative;
-   
 
-    .footer-title{
+    .footer-title {
       font-size: 4rem;
       padding-bottom: 2rem;
       text-align: center;
-      
     }
 
-    .footer-description{
+    .footer-description {
       font-size: 2rem;
 
       a {
-        color: #383D3F;
+        color: #383d3f;
       }
-      
     }
-    
   }
 
   &__form-container {
@@ -221,7 +212,6 @@ body.should-show-footer .user-profile-page__footer {
 body.should-show-footer .user-profile-page__header__arrow-button {
   transform: rotate(270deg);
 }
-
 
 body.has-js .user-profile-page__header__arrow-button {
   display: block;
