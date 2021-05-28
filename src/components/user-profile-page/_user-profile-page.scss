@@ -198,12 +198,15 @@
     }
 
     &__header__arrow-button {
-      transform: rotate(0deg);
-      transition: transform 250ms ease-out;
+      background-size: 30%;
+      height: 80px;
+      transform: rotate(360deg);
+      width: 80px;
     }
 
     &__header__description {
-      padding-bottom: 5rem;
+      font-size: 2rem;
+      padding: 2rem 5rem 5rem;
     }
 
     &__form {
@@ -255,6 +258,20 @@
   }
 
   @include mixins.desktop-hd {
+    &__header {
+      width: 50%;
+      img {
+        width: 55%;
+      }
+    }
+
+    &__header__title {
+      padding-top: 5rem;
+    }
+
+    &__form {
+      padding: 5rem 10rem;
+    }
   }
 }
 
