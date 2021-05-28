@@ -29,19 +29,23 @@
         <form class="user-profile-page__form">
           <div class="input-group">
             <label for="name"> Name </label>
-            <input id="name" type="text" name="name" placeholder="Kendall Jenner" />
+            <div class="input-group__content">
+              <input id="name" type="text" name="name" placeholder="Kendall Jenner" />
+            </div>
           </div>
 
           <div class="input-group">
             <label> Gender </label>
-            <label class="radio-input">
-              <input type="radio" name="gender" value="male" />
-              <span>Male</span>
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="gender" value="female" />
-              <span>Female</span>
-            </label>
+            <div class="input-group__content">
+              <label class="radio-input">
+                <input type="radio" name="gender" value="male" />
+                <span>Male</span>
+              </label>
+              <label class="radio-input">
+                <input type="radio" name="gender" value="female" />
+                <span>Female</span>
+              </label>
+            </div>
           </div>
           <div class="input-group">
             <label for="birthday">Date of Birth</label>
@@ -63,20 +67,22 @@
             <input id="customer-id" type="text" name="customer-id" placeholder="576802-ERD0348 45" required />
           </div>
 
-          <div>
+          <div class="input-group__membership">
             <label for="Membership"> Membership </label>
-            <label class="radio-input">
-              <input type="radio" name="membership" value="classic" />
-              <span>Classic</span>
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="membership" value="silver" />
-              <span>Silver</span>
-            </label>
-            <label class="radio-input">
-              <input type="radio" name="membership" value="gold" />
-              <span>Gold</span>
-            </label>
+            <div class="input-group__content">
+              <label class="radio-input">
+                <input type="radio" name="membership" value="classic" />
+                <span>Classic</span>
+              </label>
+              <label class="radio-input">
+                <input type="radio" name="membership" value="silver" />
+                <span>Silver</span>
+              </label>
+              <label class="radio-input">
+                <input type="radio" name="membership" value="gold" />
+                <span>Gold</span>
+              </label>
+            </div>
           </div>
 
           <div class="user-profile-page__form__buttons">
