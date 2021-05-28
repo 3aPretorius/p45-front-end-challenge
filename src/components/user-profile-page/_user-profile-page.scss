@@ -243,6 +243,18 @@
         }
       }
     }
+
+    &__footer {
+      padding: 10rem 10rem;
+
+      .footer-title {
+        font-size: 4rem;
+        padding-bottom: 8rem;
+      }
+    }
+  }
+
+  @include mixins.desktop-hd {
   }
 }
 
