@@ -256,7 +256,11 @@
     }
 
     &__footer {
+      bottom: 0%;
+      left: 100%;
       padding: 0rem 8rem;
+      transition: left 250ms ease-out;
+
       .footer-title {
         font-size: 4rem;
         padding: 10rem 0rem 4rem;
@@ -290,6 +294,10 @@
 body {
   &.should-show-footer .user-profile-page__footer {
     bottom: 0;
+
+    @include mixins.desktop {
+      left: 0;
+    }
   }
 
   &.should-show-footer .user-profile-page__header__arrow-button {
