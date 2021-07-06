@@ -1,0 +1,314 @@
+@use './components/global/mixins';
+
+.user-profile-page {
+  color: #373738;
+  font-family: arial;
+  height: 100%;
+  position: relative;
+
+  &__header {
+    background: #ffd500;
+    padding: 11rem 0 16rem;
+    position: relative;
+
+    img {
+      display: block;
+      margin: auto;
+      padding: 0 2.1rem;
+      width: 85%;
+    }
+  }
+
+  &__header__title {
+    font-size: 4rem;
+    padding: 7rem 3rem 0rem;
+    text-align: center;
+  }
+
+  &__header__description {
+    font-size: 2.5rem;
+    padding: 2rem 5rem 8rem;
+    text-align: center;
+  }
+
+  &__header__arrow-button {
+    background: #383d3f url("/components/user-profile-page/images/arrow.svg") no-repeat center center;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: transform 250ms ease-out;
+    width: 60px;
+  }
+
+  &__form {
+    font-size: 1.6rem;
+    padding: 5rem 2rem 0rem;
+
+    .input-group {
+      margin: 0 0 2rem 0;
+    }
+
+    label {
+      display: block;
+    }
+
+    input {
+      background-color: #f5f8f9;
+      border: 1px solid #cad8de;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      padding: 1rem;
+      width: 100%;
+
+      &:invalid {
+        color: #ff9200;
+      }
+    }
+
+    .radio-input {
+      align-items: center;
+      display: inline-flex;
+      margin-right: 2.4rem;
+
+      :focus,
+      :hover {
+        border: 1px solid #b1bfcd;
+      }
+
+      span {
+        &:hover {
+          border: none;
+        }
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        cursor: pointer;
+        height: 5.2rem;
+        margin-right: 2rem;
+        width: 5.2rem;
+
+        &:checked {
+          background: #b1bfcd;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    input[type="radio"][name="gender"][value="male"] {
+      background-image: url("/components/user-profile-page/images/mars-symbol.svg");
+
+      &:checked {
+        background-image: url("/components/user-profile-page/images/mars-symbol--white.svg");
+      }
+    }
+
+    input[type="radio"][name="gender"][value="female"] {
+      background-image: url("/components/user-profile-page/images/venus-symbol.svg");
+
+      &:checked {
+        background-image: url("/components/user-profile-page/images/venus-symbol--white.svg");
+      }
+    }
+
+    input[type="radio"][name="membership"] {
+      background-image: url("/components/user-profile-page/images/card.svg");
+
+      &:checked {
+        background-image: url("/components/user-profile-page/images/card--white.svg");
+      }
+    }
+
+    &__buttons {
+      margin-top: 2rem;
+
+      button {
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+      }
+
+      &-cancel {
+        background-color: #f5f8f9;
+
+        &:hover {
+          background-color: #cbd7dd;
+          transition: 250ms;
+        }
+      }
+
+      &-save {
+        background-color: #60e6c5;
+
+        &:hover {
+          background-color: #59c9a7;
+          transition: 250ms;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    background: #ff9200;
+    bottom: -100%;
+    height: 100%;
+    padding: 5rem 2rem 0rem;
+    position: relative;
+    transition: bottom 250ms ease-out;
+
+    .footer-title {
+      font-size: 4rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    .footer-description {
+      font-size: 2rem;
+
+      a {
+        color: #383d3f;
+      }
+    }
+  }
+
+  &__form-and-footer-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  @include mixins.desktop {
+    display: flex;
+    width: 100%;
+
+    &__header {
+      width: 70%;
+      img {
+        width: 65%;
+      }
+    }
+
+    &__header__arrow-button {
+      background-size: 25%;
+      height: 60px;
+      transform: rotate(360deg);
+      width: 60px;
+    }
+
+    &__header__title {
+      font-size: 3rem;
+    }
+
+    &__header__description {
+      font-size: 2rem;
+      padding: 2rem 5rem 5rem;
+    }
+
+    &__form {
+      font-size: 1.6rem;
+      height: 100vh;
+      max-width: 100%;
+      padding: 2rem 4rem;
+      width: 100vw;
+
+      .input-group {
+        align-items: center;
+        display: flex;
+
+        label {
+          flex: 0 0 30%;
+          margin-right: 4rem;
+        }
+      }
+
+      .input-group__content {
+        display: block;
+        flex: 1 1 auto;
+        padding: 1rem;
+      }
+
+      .input-group__membership {
+        padding-top: 3rem;
+      }
+
+      &__buttons {
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          width: 30%;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    &__footer {
+      bottom: 0%;
+      left: 100%;
+      padding: 0rem 8rem;
+      transition: left 250ms ease-out;
+
+      .footer-title {
+        font-size: 4rem;
+        padding: 10rem 0rem 4rem;
+        text-align: left;
+      }
+    }
+  }
+
+  @include mixins.desktop-hd {
+    &__header {
+      width: 50%;
+      img {
+        width: 55%;
+      }
+    }
+
+    &__header__title {
+      padding-top: 5rem;
+    }
+
+    &__form {
+      padding: 5rem 20rem;
+    }
+
+    &__footer {
+      padding: 0rem 15rem;
+    }
+  }
+}
+
+body {
+  &.should-show-footer .user-profile-page__footer {
+    bottom: 0;
+
+    @include mixins.desktop {
+      left: 0;
+    }
+  }
+
+  &.should-show-footer .user-profile-page__header__arrow-button {
+    transform: rotate(270deg);
+  }
+
+  &.has-js .user-profile-page__header__arrow-button {
+    display: block;
+  }
+
+  &.has-js .user-profile-page__footer {
+    position: absolute;
+  }
+}
